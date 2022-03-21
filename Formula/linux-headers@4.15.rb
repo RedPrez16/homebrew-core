@@ -11,6 +11,7 @@ class LinuxHeadersAT415 < Formula
   keg_only :versioned_formula
 
   depends_on :linux
+  depends_on :macos
 
   def install
     system "make", "headers_install", "INSTALL_HDR_PATH=#{prefix}"
